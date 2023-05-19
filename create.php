@@ -20,14 +20,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Validate id number
     $input_id_number = trim($_POST["id_number"]);
-    if (empty($input_address)) {
+    if (empty($input_id_number)) {
         $id_number_err = "Please enter your id number.";
     } else {
         $id_number = $input_id_number;
     }
 
     // Validate country
-    $input_country = trim($_POST["country"]);
+    //$input_country = trim($_POST["country"]);
     //if (empty($input_country)) {
     //$country_err = "Please enter your country.";
     // } elseif (!ctype_digit($input_country)) {
